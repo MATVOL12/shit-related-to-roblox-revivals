@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://roblox.com/RCCServiceSoap" xmlns:ns1="http://roblox.com/" xmlns:ns3="http://roblox.com/RCCServiceSoap12">
+    <SOAP-ENV:Body>
+        <ns1:OpenJobEx>
+            <ns1:job>
+                <ns1:id>JOB_dddHedrNVI9Bn46WCsqZofEXJ023RYghLl</ns1:id>
+                <ns1:expirationInSeconds>9999</ns1:expirationInSeconds>
+                <ns1:category>1</ns1:category>
+                <ns1:cores>1</ns1:cores>
+            </ns1:job>
+            <ns1:script>
+                <ns1:name>SOAP</ns1:name>
+                <ns1:script>                <!-- its motherfucking hell, i shouldnt mess up with this... -->
+                    {
+                        "Mode": "Thumbnail",
+                        "Settings": {
+                            "Type": "Avatar",  <!-- Changed "Hat" to "Avatar"cuz why fucking not -->
+                            "Arguments": [
+                                "rbxassetid://1234567",  <!-- replace with player id idk  -->
+                                "png",
+                                420,
+                                420,
+                                "https://assetdelivery.roblox.com/v1/"
+                            ]
+                        }
+                    }
+                </ns1:script>       <!-- my brain fucking melt -->
+                <ns1:arguments>
+                    <ns1:LuaValue xsi:type="ns1:LuaString">rbxassetid://1234567</ns1:LuaValue>  <!-- replace this shit with player's id -->
+                    <ns1:LuaValue xsi:type="ns1:LuaString">png</ns1:LuaValue>
+                    <ns1:LuaValue xsi:type="ns1:LuaNumber">420</ns1:LuaValue>
+                    <ns1:LuaValue xsi:type="ns1:LuaNumber">420</ns1:LuaValue>
+                    <ns1:LuaValue xsi:type="ns1:LuaString">https://assetdelivery.roblox.com/v1/</ns1:LuaValue>
+                </ns1:arguments>
+            </ns1:script>
+        </ns1:OpenJobEx>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
